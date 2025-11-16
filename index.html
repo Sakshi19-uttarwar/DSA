@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pattern</title>
+</head>
+<body>
+
+    <pre id="pattern"></pre>
+
+    <script>
+        let output = "";
+        let n = 5;
+    
+
+        for (let i = 0; i< n; i++) {
+           
+            for (let j = 0; j<i; j++) {
+                output +=  " ";   
+            }
+            for(let j=0; j< 2*n-(2*i+1); j++){
+                output += "*";
+            }
+            output += "\n";
+            
+        }
+
+        document.getElementById("pattern").textContent = output;
+    </script>
+
+</body>
+</html>
